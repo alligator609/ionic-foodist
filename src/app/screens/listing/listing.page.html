@@ -10,4 +10,15 @@
     </div>
     <!-- search bar -->
     <app-searchbar></app-searchbar>
+
+    <!-- category -->
+    <div class="categories">
+        <app-category-item *ngFor="let item of categories" [item]="item"></app-category-item>
+    </div>
+
+    <!--  products -->
+    <h1 class="list-header">Popular</h1>
+    <div class="food-list">
+        <app-food-card *ngFor="let item of foods" [item]="item"></app-food-card>
+    </div>
 </ion-content>
