@@ -16,7 +16,7 @@ const routes: Routes = [
     loadChildren: () => import('./screens/listing/listing.module').then( m => m.ListingPageModule)
   },
   {
-    path: 'detail',
+    path: 'details/:id',
     loadChildren: () => import('./screens/detail/detail.module').then( m => m.DetailPageModule)
   },
   {

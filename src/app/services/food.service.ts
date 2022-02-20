@@ -14,56 +14,59 @@ export class FoodService  {
       {
         id: 1,
         title: 'Fruits',
-        description: 'Fruits',
+        description: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. dlorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. dd ',
         price: 1,
         image: 'assets/images/1.jpg'
       },
       {
         id: 2,
         title: 'Vegetables',
-        description: 'Vegetables',
+        description: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. dlorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. dd ',
         price: 2,
         image: 'assets/images/2.jpg'
       },
       {
         id: 3,
         title: 'Meat',
-        description: 'Meat',
+        description: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. dlorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. dd ',
         price: 3,
         image: 'assets/images/3.jpg'
       },
       {
         id: 4,
         title: 'Dairy',
-        description: 'Dairy',
+        description: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. dlorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. dd ',
         price: 4,
         image: 'assets/images/4.jpg'
       },
       {
         id: 5,
         title: 'Beverages',
-        description: 'Beverages',
+        description: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. dlorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. dd ',
         price: 5,
         image: 'assets/images/5.jpg'
       },
       {
         id: 6,
         title: 'Bread',
-        description: 'Bread',
+        description: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. dlorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. dd ',
+
         price: 6,
         image: 'assets/images/6.jpg'
       },
       {
         id: 7,
         title: 'Fruits',
-        description: 'Fruits',
+        description: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. dlorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. dd ',
+
         price: 7,
         image: 'assets/images/1.jpg'
       },
       {
         id: 8,
         title: 'Vegetables',
-        description: 'Vegetables',
+        description: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. dlorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. dd ',
+
         price: 8,
 
         image: 'assets/images/2.jpg'
@@ -71,6 +74,6 @@ export class FoodService  {
   }
 
   getFood(id: number): Food {
-    return this.getFoods().find(food => food.id === id);
+    return this.getFoods().find(food => food.id == id);
   }
 }
