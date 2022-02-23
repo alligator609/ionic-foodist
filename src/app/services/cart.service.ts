@@ -7,7 +7,16 @@ import { CartItem } from '../models/cart-item.model';
 
 
 export class CartService  {
-  private item$ = new BehaviorSubject<CartItem[]>([]);
+
+  private item$ = new BehaviorSubject<CartItem[]>([
+    {
+      id:1,
+      name:'sea food',
+      price:0,
+      quantity:0,
+      image:'assets/images/1.jpg'
+    }
+  ]);
   constructor() {
   }
   getItems() {
@@ -19,5 +28,9 @@ export class CartService  {
   removeItem(item: CartItem) {
     this.item$.next(this.item$.getValue().filter(i => i.id !== item.id));
   }
+  getCart(){
+    return this.item$.asObservable();
+  }
+  
 
 }
