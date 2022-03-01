@@ -3,7 +3,7 @@
     <ion-list lines="none">
         <ion-item-sliding *ngFor="let cartItem of cartItems$|async">
             <ion-item>
-                <app-cart-item [cartItem]="cartItem" style="display: block;"></app-cart-item>
+                <app-cart-item [cartItem]="cartItem" (increase)="onIncrease(cartItem)" (decrease)="onDecrease(cartItem)" style="display: block;"></app-cart-item>
             </ion-item>
             <ion-item-options side="end">
                 <ion-item-option (click)="removeFromCart(cartItem)">
@@ -19,4 +19,8 @@
         <ion-icon name="cart"></ion-icon>
         <p>Your cart is empty</p>
     </div>
+    <!--  cehckout button -->
+    <app-button *ngIf="(cartItems$|async).length">
+        Total: <span> <sup>$</sup> </span>{{(total$|async) |number:'1.2'}}
+    </app-button>
 </ion-content>

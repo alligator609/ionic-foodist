@@ -49,3 +49,16 @@ app-cart-item {
         font-weight: 700;
     }
 }
+
+app-button {
+    display: block;
+    padding: 1.6rem;
+    span {
+        margin-left: 10px;
+        font-size: 1.5rem;
+        sup {
+            font-weight: 400;
+            font-size: 0.9rem;
+        }
+    }
+}
