@@ -12,6 +12,10 @@ import { FoodService } from 'src/app/services/food.service';
 export class ListingPage implements OnInit {
  categories:Category[] =[];
  foods:Food[] =[];
+ catSlideOpts={
+    slidesPerView: 3.5,
+    freeMode:true,
+ }
   constructor(private foodService:FoodService,private router:Router) { }
 
   ngOnInit() {

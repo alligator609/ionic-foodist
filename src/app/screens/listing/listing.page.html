@@ -12,9 +12,14 @@
     <app-searchbar></app-searchbar>
 
     <!-- category -->
-    <div class="categories">
+    <!--  <div class="categories">
         <app-category-item *ngFor="let item of categories" [item]="item"></app-category-item>
-    </div>
+    </div> -->
+    <ion-slides class="categories" [options]="catSlideOpts">
+        <ion-slide *ngFor="let item of categories">
+            <app-category-item [item]="item"></app-category-item>
+        </ion-slide>
+    </ion-slides>
 
     <!--  products -->
     <h1 class="list-header">Popular</h1>
